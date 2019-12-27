@@ -16,9 +16,9 @@ pipeline {
 		stage("Analise:Sonar") {
           	  steps {
 			sh '$MVN sonar:sonar \
-			-Dsonar.projectKey=BecaDevOps:master \
-			-Dsonar.host.url=http://localhost:9000 \
-			-Dsonar.login=4fef96852af3a9a6974492fc678a248141b6a134'
+			-Dsonar.projectKey=sample-java-app \
+			-Dsonar.host.url=http://34.69.5.32:9000 \
+			-Dsonar.login=75e2e81e0354d15c0f6fabc6baab1e7110fcbb6e'
                 }
             }
         }
